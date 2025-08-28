@@ -3,7 +3,7 @@
     export default function Layout({ children })
     {
         return (
-            <div style={{ paddingTop: '2rem' }}>
+           <div style={{ paddingTop: '2rem' }}>
                 {/* ...existing code... */}
                 {children}
                 {/* ...existing code... */}
