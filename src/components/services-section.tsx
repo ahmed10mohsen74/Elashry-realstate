@@ -63,9 +63,12 @@ const ServicesSection = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="overflow-hidden group hover:shadow-elegant transition-all duration-300 animate-fade-in">
+              <Card
+                key={index}
+                className="overflow-hidden group hover:shadow-elegant transition-all duration-300 animate-fade-in"
+              >
                 <div className="relative h-48 overflow-hidden">
-                  <img 
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -78,13 +81,15 @@ const ServicesSection = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-right">{service.title}</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-right">
+                    {service.title}
+                  </h3>
                   <p className="text-muted-foreground mb-4 text-right leading-relaxed">
                     {service.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6 justify-end">
                     {service.features.map((feature, featureIndex) => (
-                      <span 
+                      <span
                         key={featureIndex}
                         className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm"
                       >
@@ -92,11 +97,15 @@ const ServicesSection = () => {
                       </span>
                     ))}
                   </div>
-                   <Link to={service.title === "حجز الفنادق" ? "/hotels" : "/cars"}>
-                     <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity">
-                       {service.title === "حجز الفنادق" ? "احجز فندقك" : "استأجر سيارة"}
-                     </Button>
-                   </Link>
+                  <Link
+                    to={service.title === "حجز الفنادق" ? "/hotels" : "/cars"}
+                  >
+                    <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity">
+                      {service.title === "حجز الفنادق"
+                        ? "احجز فندقك"
+                        : "استأجر سيارة"}
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             );
@@ -105,15 +114,20 @@ const ServicesSection = () => {
 
         {/* Features Grid */}
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold mb-4">لماذا تختار EasyRent؟</h3>
-          <p className="text-muted-foreground">نحن نلتزم بتقديم أفضل تجربة سفر لعملائنا</p>
+          <h3 className="text-3xl font-bold mb-4">لماذا تختار SmartRent?</h3>
+          <p className="text-muted-foreground">
+            نحن نلتزم بتقديم أفضل تجربة سفر لعملائنا
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="text-center p-6 hover:shadow-elegant transition-all duration-300 group animate-slide-up">
+              <Card
+                key={index}
+                className="text-center p-6 hover:shadow-elegant transition-all duration-300 group animate-slide-up"
+              >
                 <div className="bg-gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-glow">
                   <Icon className="w-8 h-8 text-white" />
                 </div>

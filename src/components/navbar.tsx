@@ -21,8 +21,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-              Elashry
+            <Link
+              to="/"
+              className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            >
+              SmartRent
             </Link>
           </div>
 
@@ -63,10 +66,13 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-80">
               <div className="flex flex-col space-y-6 mt-8">
-                <Link to="/" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent text-center block">
+                <Link
+                  to="/"
+                  className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent text-center block"
+                >
                   EasyRent
                 </Link>
-                
+
                 <div className="flex flex-col space-y-4">
                   {navItems.map((item) => (
                     <Link
@@ -88,9 +94,7 @@ const Navbar = () => {
                     <User className="w-4 h-4 ml-2" />
                     تسجيل الدخول
                   </Button>
-                  <Button className="bg-gradient-primary">
-                    إنشاء حساب
-                  </Button>
+                  <Button className="bg-gradient-primary">إنشاء حساب</Button>
                 </div>
               </div>
             </SheetContent>

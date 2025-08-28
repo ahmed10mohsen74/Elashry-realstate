@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-3xl font-bold text-secondary">EasyRent</div>
+            <div className="text-3xl font-bold text-secondary">SmartRent</div>
             <p className="text-primary-foreground/80 leading-relaxed">
               منصة حجز الفنادق والسيارات الرائدة في مصر والشرق الأوسط. نوفر لك
               أفضل الخيارات بأسعار تنافسية.
